@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SBarrachinaCode</title>
+    <!-- J QUERY CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--/J QUERY CDN -->
+    <!-- BOOTSTRAP CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- /BOOTSTRAP CDN -->
+    <!-- ICON CDN -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css" />
+    <!--/ICON CDN -->
+    <!-- LINK CSS FILE -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!--/LINK CSS FILE -->
+    <!-- ISOTOPES PLUGIN -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <!--/ISOTOPES PLUGIN -->
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <!--/OWL CAROUSEL -->
+    <!-- AOS ANIMATION CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--/AOS ANIMATION CSS -->
+  </head>
+  <body>
+    <!-- ======================================== THEME CHANGER======================================== -->
+    <div
+      class="theme_btn dropdown-toggle"
+      id="menu1"
+      data-toggle="dropdown"
+      data-aos="zoom-in"
+    >
+      <span class="material-icons-outlined">settings</span>
+    </div>
+    <div class="theme_box dropdown-menu" role="menu">
+      <div class="theme_mode">
+        <div class="light_mode">
+          <img
+            src="images/light_mode.png"
+            alt=""
+            style="border: 2px solid #000"
+          />
+          <label for="">Light Mode</label>
+        </div>
+        <div class="dark_mode">
+          <img src="images/dark_mode.png" alt="" />
+          <label for="">Dark Mode</label>
+        </div>
+      </div>
+      <div class="theme_colors">
+        <label for="">Colors: </label>
+        <div class="row mx-auto theme_shades">
+          <span
+            data-color-code="#A97AFD"
+            style="background: #a97afd; border: 2px solid var(--black_color)"
+          ></span>
+          <span data-color-code="#4070F4" style="background: #4070f4"></span>
+          <span data-color-code="#e51b4d" style="background: #e51b4d"></span>
+          <span data-color-code="#F7AD19" style="background: #f7ad19"></span>
+          <span data-color-code="#FE87AC" style="background: #fe87ac"></span>
+        </div>
+      </div>
+    </div>
+    <!-- ========================================/THEME CHANGER======================================== -->
+    <!-- ======================================== NAVBAR PORTION======================================== -->
+    <div class="container-fluid Navbar_Portion" id="Navbar_Portion">
+      <div class="col-xl-10 mx-auto">
+        <div class="col-12 d-flex align-items-center justify-content-between">
+          <div class="nav_logo">
+            <span>
+              <span>{</span><span class="material-icons-outlined">computer</span
+              ><span>}</span>
+              <span>&nbsp;SandraBarrachinaCode</span>
+            </span>
+          </div>
+          <div class="nav_links d-xl-flex d-lg-flex d-none">
+            <li><a href="#Banner_Portion">Home</a></li>
+            <li><a href="#About_Me_Portion">Sobre mí</a></li>
+            <li><a href="#Skills_Portion">Skills</a></li>
+            <li><a href="#Qualification_Portion">Formación</a></li>
+            <li><a href="#Portfolio_Portion">Portfolio</a></li>
+            <li><a href="https://sandrabarrachinaescritora.netlify.app/">Escritora</a></li>
+            <li><a href="http://www.sandrabarrachina.com/">Cine</a></li>
+            <li><a href="#Contect_Me_Portion">Contacto</a></li>
+
+          </div>
+          <div class="small_navbar">
+            <div
+              class="nav_btn dropdown-toggle"
+              id="menu1"
+              data-toggle="dropdown"
+            >
+              <span class="material-icons-outlined">grid_view</span>
+            </div>
+            <div
+              class="small_nav dropdown-menu"
+              role="menu"
+              aria-labelledby="menu1"
+              style="top: 10px !important"
+            >
+              <div class="d-flex align-items-center justify-content-between">
+                <div
+                  class="d-flex align-items-center justify-content-start flex-column"
+                >
+                  <li>
+                    <a href="#Banner_Portion"
+                      ><span class="material-icons-outlined">home</span
+                      ><span>Home</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#About_Me_Portion"
+                      ><span class="material-icons-outlined">edit_note</span
+                      ><span>Sobre Mí</span></a>
+                  </li>
+                </div>
+                <div
+                  class="d-flex align-items-center justify-content-start flex-column"
+                >
+                  <li>
+                    <a href="#Skills_Portion"
+                      ><span class="material-icons-outlined"
+                        >account_circle</span
+                      ><span>Skills</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#Qualification_Portion"
+                      ><span class="material-icons-outlined">school</span
+                      ><span>Formación</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#Portfolio_Portion"
+                      ><span class="material-icons-outlined"
+                        >perm_phone_msg</span
+                      ><span>Portofolio</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="http://www.sandrabarrachina.com/"
+                      ><span class="material-icons-outlined"
+                        >perm_phone_msg</span
+                      ><span>Cine</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://sandrabarrachinaescritora.netlify.app/"
+                      ><span class="material-icons-outlined"
+                        >perm_phone_msg</span
+                      ><span>Escritora</span></a
+                    >
+                  </li>
+                 
+                 
+
+
+                </div>
+                <div
+                  class="d-flex align-items-center justify-content-start flex-column"
+                >
+                 
+                  <li>
+                    <a href="#Contect_Me_Portion"
+                      ><span class="material-icons-outlined"
+                        >business_center</span
+                      ><span>Contacto</span></a
+                    >
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ========================================/NAVBAR PORTION======================================= -->
+    <!-- ========================================BANNER PORTION======================================== -->
+    <div class="container-fluid Banner_Portion" id="Banner_Portion">
+      <div class="col-xl-10 mx-auto">
+        <div
+          class="col-12 d-flex align-items-center justify-content-between flex-xl-row flex-lg-row flex-column-reverse"
+        >
+          <div class="col-xl-6 col-lg-7 col-md-11 col-12" data-aos="zoom-in">
+            <div class="personal_info">
+              <span>HOLA SOY</span>
+              <h1>Sandra Barrachina</h1>
+              <h4>Junior Full Stack Developer</h4>
+              <p>
+                Me llamo Sandra Barrachina. Soy diplomada en Montaje ,
+                Postproducción y sonido en cine y ahora también Desarrolladora
+                Web tras finalizar un bootcamp de programación Full
+                Stack.<br /><br />
+                ¿Qué puedo aportar?<br /><br />
+
+                Entusiasmo, seriedad, confianza y conocimientos. Los que han
+                trabajado conmigo han confiado y resaltado mi
+                profesionalidad.<br /><br />
+
+                Implicada en cada proyecto,instruirme todo lo necesario para
+                rendir al máximo. Motivar a la gente que me rodea con mi
+                entusiasmo a base de trabajo duro y constante.<br /><br />
+
+                Responsable y creativa en todo lo que hago. Nunca sé lo
+                suficiente porque siempre tengo en mente seguir mejorando. Saber
+                escuchar y comprender, para luego encontrar la mejor solución a
+                los problemas que puedan surgir en cada proyecto, acuden a mi
+                para resolverlos.
+              </p>
+            </div>
+            <div class="contect_info">
+              <li>
+                <span class="material-icons">email</span
+                ><span>&nbsp;sandrabarrachina1978@gmail.com</span>
+              </li>
+              <li>
+                <span class="material-icons">phone_in_talk</span
+                ><span>&nbsp;+34 661 358 401</span>
+              </li>
+              <li>
+                <span class="material-icons">location_on</span
+                ><span>&nbsp;Barcelona , Spain</span>
+              </li>
+              <button>
+                <span>CONTÁCTAME!&nbsp;</span
+                ><span class="material-icons-outlined">handshake</span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="col-xl-4 col-lg-5 col-md-8 col-sm-9 col-12"
+            data-aos="zoom-in"
+          >
+            <div class="img_container banner_img">
+              <img class="sandra" src="images/sandraFoto.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ========================================/BANNER PORTION======================================== -->
+    <!-- ======================================== ABOUT US PORTION====================================== -->
+    <div class="container-fluid About_Me_Portion" id="About_Me_Portion">
+      <div class="col-xl-10 mx-auto">
+        <div
+          class="col-12 d-flex align-items-center justify-content-around flex-xl-row flex-lg-row flex-md-row flex-column"
+        >
+          <div
+            class="col-xl-5 col-lg-6 col-md-5 col-sm-10 col-12 about_banner"
+            data-aos="zoom-out"
+          >
+            <div class="img_container">
+              <img src="images/coderSandra.png" alt="" />
+            </div>
+          </div>
+          <div
+            class="col-xl-6 col-lg-6 col-md-7 col-sm-10 col-12 about_detail"
+            data-aos="zoom-out"
+          >
+            <div class="Portion_Heading">
+              <h2>SOBRE MÍ</h2>
+            </div>
+            <p>
+              Hola Soy Sandra Barrachina Full Stack Developer.<br>
+			  Ahora me estoy iniciando en el mundo de la programación. Donde he tenido que
+              aprender nuevos lenguajes complejos y desconocidos para mi. Trabajar en
+              proyectos en equipo me ha permitido ponerme a prueba y sacar toda
+              la experiencia que adquirí como coordinadora en un call center y
+              como responsable de montaje y mezcla sonora en audiovisuales.
+            </p>
+            <div class="tags row mx-auto">
+              <li>HTML</li>
+              <li>CSS</li>
+			  <li>JAVASCRIPT</li>
+			  <li>REACT</li>
+
+              <li>J QUERY</li>
+              <li>JAVA</li>
+              <li>SPRING BOOT</li>
+			  <li>GRADLE</li>
+              <li>SQL</li>
+              <li>H2</li>
+              <li>POSTMAN</li>
+              <li>GIT</li>
+              <li>GITHUB</li>
+              <li>NPM</li>
+			 <li>BOOTSTRAP</li>
+			 <li>TDD</li>
+
+            </div>
+            <button> <a href="http://www.sandrabarrachina.com/wp-content/uploads/2022/04/sandra-barrachina.pdf"target="blank">
+              <span>Download CV&nbsp;</span><span class="jam jam-upload"></span>
+            </button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ======================================== SKILLS PORTION======================================== -->
+    <div class="container-fluid Skills_Portion" id="Skills_Portion">
+      <div class="col-xl-10 mx-auto">
+        <div class="Portion_Heading">
+          <h2>SKILLS</h2>
+          <span>SKILLS</span>
+        </div>
+        <div class="col-12 Skills row mx-auto">
+          <div
+            class="col-xl-6 col-lg-6 col-md-10 col-sm-11 col-12"
+            data-aos="zoom-in"
+          >
+            <div class="progressbar_container mx-auto">
+              <h3>Technical Skills</h3>
+              <div class="mb-4">
+                <div class="tech_skills skill_set show_skills">
+                  <span class="icon material-icons-outlined"
+                    >integration_instructions</span
+                  >
+                  <div>
+                    <h5>Frontend Developement</h5>
+                  </div>
+                  <span class="expand_more material-icons-outlined"
+                    >chevron_right</span
+                  >
+                </div>
+                <div class="skills">
+                  <div class="label">
+                    <span>HTML</span>
+                    <span>50%</span>
+                  </div>
+                  <div class="progress_bar">
+                    <div class="progress_indi" style="width: 50%"></div>
+                  </div>
+                  <div class="label">
+                    <span>CSS</span>
+                    <span>50%</span>
+                  </div>
+                  <div class="progress_bar">
+                    <div class="progress_indi" style="width: 50%"></div>
+                  </div>
+				  <div class="label">
+                    <span>JAVASCRIPT</span>
+                    <span>50%</span>
+                  </div>
+                  <div class="progress_bar">
+                    <div class="progress_indi" style="width: 50%"></div>
+                  </div>
+
+                  <div class="label">
+                    <span>React JS</span>
+                    <span>50%</span>
+                  </div>
+                  <div class="progress_bar">
+                    <div class="progress_indi" style="width: 50%"></div>
+                  </div>
+				  <div class="label">
+                    <span>Figma</span>
+                    <span>70%</span>
+                  </div>
+                  <div class="progress_bar">
+                    <div class="progress_indi" style="width: 70%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-4">
+                <div class="tech_skills skill_set">
+                  <span class="icon material-icons-outlined"
+                    >settings_ethernet</span
+                  >
+                  <div>
+                    <h5>Backend Developement</h5>
+                  </div>
+                  <span class="expand_more material-icons-outlined"
+                    >chevron_right</span
+                  >
+                </div>
+                <div class="skills">
+                  <div class="label">
+                    <span>JAVA</span>
+                    <span>60%</span>
+                  </div>
+                  <div class="progress_bar">
+                    <div class="progress_indi" style="width: 60%"></div>
+                  </div>
+                  <div class="label">
+                    <span>SPRINT BOOT</span>
+                    <span>60%</span>
+                  </div>
+                  <div class="progress_bar">
+                    <div class="progress_indi" style="width: 60%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-4">
+                <div class="tech_skills skill_set">
+                  <span class="icon material-icons-outlined">devices</span>
+                  <div>
+                    <h5>Técnica Audiovisuales</h5>
+                    <span>10 años</span>
+                  </div>
+                  <span class="expand_more material-icons-outlined"
+                    >chevron_right</span
+                  >
+                </div>
+                <div class="skills">
+                  <div class="label">
+                    <span>Photoshop</span>
+                    <span>90%</span>
+                  </div>
+                  <div class="progress_bar">
+                    <div class="progress_indi" style="width: 90%"></div>
+                  </div>
+				  <div class="label">
+                    <span>After Effects</span>
+                    <span>80%</span>
+                  </div>
+                  <div class="progress_bar">
+                    <div class="progress_indi" style="width: 80%"></div>
+                  </div>
+				  <div class="label">
+                    <span>Premiere CC y Final cut Pro X</span>
+                    <span>95%</span>
+                  </div>
+                  <div class="progress_bar">
+                    <div class="progress_indi" style="width: 95%"></div>
+                  </div>
+				  
+                  <div class="label">
+                    <span>Pro Tools</span>
+                    <span>90%</span>
+                  </div>
+                  <div class="progress_bar">
+                    <div class="progress_indi" style="width: 90%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+			<img class="foto2" src="images/fotoskills.png" alt="" />
+
+          </div>
+		  <div class="col-xl-6 col-lg-6 col-md-10 col-sm-11 col-12" data-aos="zoom-in">
+			<h3>Competencias Profesionales</h3>
+			<div class="col-xl-9 progress_container row mx-auto">
+				<div class="col-6">
+					<div class="circular_progress"><span>95%</span></div>
+					<span>Comunicación</span>
+				</div>
+				<div class="col-6">
+					<div class="circular_progress" style="background: conic-gradient(var(--theme_color) 0%,var(--theme_color) 99%,#F2F2F2 99%, #F2F2F2 100%);"><span>99%</span></div>
+					<span>Organización</span>
+				</div>
+				<div class="col-6">
+					<div class="circular_progress" style="background: conic-gradient(var(--theme_color) 0%,var(--theme_color) 90%,#F2F2F2 90%, #F2F2F2 100%);"><span>90%</span></div>
+					<span>Trabajo en Equipo</span>
+				</div>
+				<div class="col-6">
+					<div class="circular_progress" style="background: conic-gradient(var(--theme_color) 0%,var(--theme_color) 95%,#F2F2F2 95%, #F2F2F2 100%);"><span>95%</span></div>
+					<span>Liderazgo</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+		 
+		 
+		  
+          
+    <!-- ========================================/SKILLS PORTION======================================== -->
+    <!-- ======================================== QUALIFICATION PORTION================================= -->
+    <div
+      class="container-fluid Qualification_Portion"
+      id="Qualification_Portion"
+    >
+      <div class="col-xl-10 mx-auto">
+        <div class="Portion_Heading">
+          <h2>Formación</h2>
+          <span>Mi Experiencia</span>
+        </div>
+        <div
+          class="col-xl-7 col-lg-7 col-md-7 col-12 qualification_tabs mx-auto"
+        >
+          <div class="education_tab active">
+            <span class="material-icons-outlined">school</span
+            ><span>&nbsp;Educación</span>
+          </div>
+          <div class="work_tab">
+            <span class="material-icons-outlined">business_center</span
+            ><span>&nbsp;Experiencia</span>
+          </div>
+        </div>
+        <div
+          class="col-xl-9 col-lg-9 col-12 mx-auto timeline education"
+          data-aos="zoom-out"
+        >
+          <div class="timeline_item">
+            <h4>Diplomatura <br>Cinematografía</h4>
+            <p>Bande à Part </p>
+            <span
+              ><span class="material-icons-outlined">calendar_month</span
+              ><span>&nbsp;2009 - 2012</span></span
+            >
+          </div>
+          <div class="timeline_item">
+            <h4>Montaje-Sonido.
+				<br>PostProducción</h4>
+            <p>10 años </p>
+            <span
+              ><span class="material-icons-outlined">calendar_month</span
+              ><span>&nbsp;2009 - 2022</span></span
+            >
+          </div>
+          <div class="timeline_item">
+            <h4>Desarrolladora Web <br> Full Stack</h4>
+            <p>BcnFemTech Factoria F5 </p>
+            <span
+              ><span class="material-icons-outlined">calendar_month</span
+              ><span>&nbsp;2021 - 2022</span></span
+            >
+          </div>
+          <div class="timeline_item">
+            <h4>Bootcamp proyectos </h4>
+            <p>6 meses</p>
+            <span
+              ><span class="material-icons-outlined">calendar_month</span
+              ><span>&nbsp;2021- 2022</span></span
+            >
+          </div>
+          <span class="timeline_icon material-icons-outlined" style="--i: 0.1"
+            >devices</span
+          >
+          <span class="timeline_icon material-icons-outlined" style="--i: 1.03"
+            >terminal</span
+          >
+          <span class="timeline_icon material-icons-outlined" style="--i: 1.95"
+            >settings_ethernet</span
+          >
+          <span class="timeline_icon material-icons-outlined" style="--i: 2.9"
+            >integration_instructions</span
+          >
+        </div>
+        <div
+          class="col-xl-9 col-lg-9 col-12 mx-auto timeline work"
+          data-aos="zoom-out"
+        >
+          <div class="timeline_item">
+            <h4>Técnica Sonido</h4>
+            <p>SDI Media</p>
+            <span
+              ><span class="material-icons-outlined">calendar_month</span
+              ><span>&nbsp;2018</span></span
+            >
+          </div>
+          <div class="timeline_item">
+            <h4>Técnica de Sonido</h4>
+            <p>Voice Factory</p>
+            <span
+              ><span class="material-icons-outlined">calendar_month</span
+              ><span>&nbsp;2018 - 2019</span></span
+            >
+          </div>
+          <div class="timeline_item">
+            <h4>Teleoperadora|<br> Coordinadora</h4>
+            <p>Gas Natural Servicios</p>
+            <span
+              ><span class="material-icons-outlined">calendar_month</span
+              ><span>&nbsp;2001 - 2007</span></span
+            >
+          </div>
+          <div class="timeline_item">
+            <h4>Editora| Colorista |<br> Jefa de Sonido</h4>
+            <p>Varias Productoras</p>
+            <span
+              ><span class="material-icons-outlined">calendar_month</span
+              ><span>&nbsp;2017 - 2022</span></span
+            >
+          </div>
+          <span class="timeline_icon material-icons-outlined" style="--i: 0.1"
+            >devices</span
+          >
+          <span class="timeline_icon material-icons-outlined" style="--i: 1.03"
+            >terminal</span
+          >
+          <span class="timeline_icon material-icons-outlined" style="--i: 1.95"
+            >settings_ethernet</span
+          >
+          <span class="timeline_icon material-icons-outlined" style="--i: 2.9"
+            >integration_instructions</span
+          >
+        </div>
+      </div>
+    </div>
+    <!-- ========================================/QUALIFICATION PORTION================================= -->
+    <!-- ======================================== PORTFOLIO PORTION================================= -->
+    <div class="container-fluid Portfolio_Portion" id="Portfolio_Portion">
+      <div class="col-xl-10 mx-auto">
+        <div class="Portion_Heading">
+          <h2>Proyectos Recientes</h2>
+          <span>Mis proyectos</span>
+        </div>
+        <div class="col-12">
+          <div class="work_tabs">
+            <li data-filter="*" class="active">Todos</li>
+            <li data-filter=".web">Webs</li>
+            <li data-filter=".app">Apps</li>
+            <li data-filter=".ui_ux">UI/UX</li>
+            <li data-filter=".games">Games</li>
+          </div>
+          <div class="col-12 px-0 row mx-auto work_items" data-aos="zoom-out">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 item web">
+              <div class="detail"> <a href="https://drive.google.com/file/d/1BkJVCf7I2rluBlZATbW_8a7CwLDYRhtK/view?usp=sharing"target="blank">
+                <p>Project Ecotravel</p>
+                <span>Web Design</span></a>
+              </div>
+              <img src="images/EcotravelWeb.png" alt="" />
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 item app">
+              <div class="detail"> <a href="https://drive.google.com/file/d/1sCPuiSTQH56R419otxL7TFHYG0Tbnz62/view?usp=sharing"target="blank">
+                <p>Project Appaches</p>
+                <span>Web Design</span></a> 
+              </div>
+              <img src="images/appaches.png" alt="" />
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 item app">
+              <div class="detail"> <a href="https://drive.google.com/file/d/1v-Ae-a2FgIPI6ofUZZODOU7o-fQOlt0W/view?usp=sharing" target="blank">
+                <p>Project Wheel of Doom</p>
+                <span>Web Design</span></a>
+              </div>
+              <img src="images/wheelofdoom.png" alt="" />
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 item app">
+              <div class="detail"> <a href="https://drive.google.com/file/d/1q_YVXf1ta7fZwnNduDHyWz0NLUo3bxsH/view?usp=sharing" target="blank">
+                <p>Project Film City Backend</p>
+                <span>Web Design</span></a>
+              </div>
+              <img src="images/filmcity.png" alt="" />
+            </div>
+
+
+
+
+
+
+
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 item web">
+              <div class="detail">
+                <a href="https://drive.google.com/file/d/1AmHpw3uxVDmlO48qH36TnLzjQTvhpxQe/view?usp=sharing" target="blank">
+                <p>Project Legacy Games</p>
+                <span>Web Design</span> </a>
+              </div>
+              <img src="images/legacyGames.png" alt="" />
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 item web">
+              <div class="detail">
+                <a href="https://drive.google.com/file/d/1IM5SCLzr1fU0Ts33YHlbtyjGXtr4mtlJ/view"target="blank">
+
+                <p>Project Página de Equipo</p>
+                <span>Web Design</span> </a>
+              </div>
+              <img src="images/paginadeEquipo.png" alt="" />
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 item web">
+              <div class="detail">
+                <a href="https://sandrabarrachinaescritora.netlify.app/"target="blank">
+
+                <p>Project Página de Escritora</p>
+                <span>Web Design</span></a>
+              </div>
+              <img src="images/página de escritora.png" alt="" />
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 item web">
+              <div class="detail">
+                <a href="https://github.com/Sbarrachina/Bootcamp-Factoria5-Documentacion/tree/main/VSC_personalweb_sandra"target="blank">
+
+                <p>Project Página de Apuntes</p>
+                <span>Web Design</span></a>
+              </div>
+              <img src="images/paginaApuntes.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ========================================/PORTFOLIO PORTION================================= -->
+  
+  
+    <!-- ======================================== CONTECT ME PORTION================================= -->
+    <div class="container-fluid Contect_Me_Portion" id="Contect_Me_Portion">
+      <div class="col-xl-10 mx-auto">
+        <div class="Portion_Heading">
+          <h2>CONTACTO</h2>
+          <span>Hablamos</span>
+        </div>
+        <div class="col-12 row mx-auto">
+          <div
+            class="col-xl-5 col-lg-5 col-md-6 col-sm-11 col-12"
+            data-aos="zoom-in"
+          >
+            <div class="contect_card">
+              <div class="icon">
+                <span class="material-icons-outlined">mail</span>
+              </div>
+              <div class="contect_detail">
+                <h5>Email Id</h5>
+                <span>sandrabarrachina1978@gmail.com</span>
+              </div>
+            </div>
+            <div class="contect_card">
+              <div class="icon">
+                <span class="material-icons-outlined">phone</span>
+              </div>
+              <div class="contect_detail">
+                <h5>Phone No</h5>
+                <span>+34 661 358 401</span>
+              </div>
+            </div>
+            <div class="contect_card">
+              <div class="icon">
+                <span class="material-icons-outlined">location_on</span>
+              </div>
+              <div class="contect_detail">
+                <h5>Dirección</h5>
+                <span>Barcelona,</span>
+                <span>Spain</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-7 col-lg-7 col-md-6 col-sm-11 col-12"
+            data-aos="zoom-in"
+          >
+          <form class="form" action="https://formspree.io/f/mpzbokrb"
+          method="POST">
+
+            <input type="text" placeholder="First Name" name="First Name" />
+
+            <input type="text" placeholder="Last Name" name="Last Name" />
+
+            <input type="email" placeholder="Email:" name="email" />
+
+            <textarea placeholder="Message" name="Message"></textarea>
+
+
+            <button type="submit" class="btn-info>">Enviar Mensaje</button>
+          </form>
+
+
+          </div>
+      
+
+        </div>
+      </div>
+    </div>
+    <!-- ========================================/CONTECT ME PORTION================================= -->
+
+    <!-- ======================================== FOOTER PORTION================================= -->
+    <div class="container-fluid Footer_Portion">
+      <div class="col-xl-10 mx-auto">
+        <div
+          class="col-12 d-flex align-items-center justify-content-between flex-xl-row flex-lg-row flex-md-row flex-sm-row flex-column"
+        >
+          <p class="mb-0">All rights reserved SandraBarrachinaCode 2022</p>
+          <div class="social_media">
+            <li><a href="https://github.com/Sbarrachina" class="jam jam-github" target="blank"></a></li>
+            <li><a href="https://www.linkedin.com/in/sandra-barrachina-00569630/"target="blank" class="jam jam-linkedin"></a></li>
+            <li><a href="https://www.instagram.com/sbarrachinafilms/"target="blank" class="jam jam-instagram"></a></li>
+            <li><a href="https://www.facebook.com/Sandra-Barrachina-Films-525382050809605"target="blank" class="jam jam-faceboock"></a></li>
+            <li><a href="https://www.youtube.com/c/SandraBarrachina%C2%A0"target="blank" class="jam jam-youtube"></a></li>
+            <li><a href="http://www.sandrabarrachina.com/"target="blank" class="jam jam-wordpress"></a></li>
+            <li><a href="https://www.flickr.com/photos/120700302@N02//"target="blank" class="jam jam-flickr"></a></li>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ========================================/FOOTER PORTION================================= -->
+    <!-- ======================================== SCROLL TO TOP================================= -->
+    <button class="scroll_to_top">
+      <span class="jam jam-arrow-up"></span>
+    </button>
+    <!-- ========================================/SCROLL TO TOP================================= -->
+
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- AOS ANIMATION -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 150,
+        duration: 700,
+      });
+    </script>
+  </body>
+</html>
